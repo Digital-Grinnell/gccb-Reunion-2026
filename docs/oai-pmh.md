@@ -25,8 +25,8 @@ Configuration:
 - Set `dc_map` fields in "config-metadata.csv": OAI XML uses their own version of basic Dublin Core metadata ([oai_dc spec](http://www.openarchives.org/OAI/2.0/oai_dc.xsd)) as a base for records.
   This allows only the fields: dc:title, dc:creator, dc:subject, dc:description, dc:publisher, dc:contributor, dc:date, dc:type, dc:format, dc:identifier, dc:source, dc:language, dc:relation, dc:coverage, dc:rights.
   The oai.xml template will iterate over all items using the `dc_map` of fields listed in `site.config-metadata`. 
-  It will compare dc_map (which are given in format like `DCTERMS.title`) with the available oai_dc terms. 
-  E.g. if you have `DCTERMS.creator` in dc_map, it will fill in `<dc:creator>` in the XML. 
+  It will compare dc_map (which are given in format like `title`) with the available oai_dc terms. 
+  E.g. if you have `creator` in dc_map, it will fill in `<dc:creator>` in the XML. 
 
 Notes: 
 
