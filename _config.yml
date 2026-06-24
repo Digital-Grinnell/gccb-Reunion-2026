@@ -12,13 +12,13 @@ url:
 # path to location on the domain if necessary e.g. /digital/hjccc
 baseurl: 
 # location of code, the full url to your github repository
-source-code: https://github.com/Digital-Grinnell/collectionbuilder-csv
+source-code: https://github.com/Digital-Grinnell/gccb-Reunion-2026  
 
 ##########
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Grinnell College CollectionBuilder CSV Template
+title: Grinnell College Reunion 2026 Digital Collection 
 # tagline, a short phrase that will appear throughout the site in the top banner
 tagline: Digital Collection Magic with Static Web Technologies
 # description appears in meta tags and other locations
@@ -36,7 +36,7 @@ timezone: America/Chicago
 #
 # Set the metadata for your collection (the name of the CSV file in your _data directory that describes the objects in your collection) 
 # Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
-metadata: grinnell-CB-CSV-demo
+metadata: re26-metadata
 # page generation settings [optional!]
 # [optional: only used if you need to tweak CB defaults or generate from more than one data file]
 # page_gen:
