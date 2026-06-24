@@ -3,11 +3,11 @@
 {% if site.keywords %}<meta name="keywords" content="{{ site.keywords | escape }}">{% endif %}
 <!-- DC meta --> 
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
-<meta name="DCTERMS.title" content="{{ page.title | escape }}, {{ site.title | escape }}" xml:lang="en" />
-{% if site.author or site.organization-name %}<meta name="DCTERMS.creator" content="{{ site.author | default: site.organization-name | escape }}" xml:lang="en" />{% endif %}
-{% if site.organization-name %}<meta name="DCTERMS.publisher" content="{{ site.organization-name | escape }}" xml:lang="en" />{% endif %}
-<meta name="DCTERMS.date" content="{{ site.time | date: '%Y' }}" xml:lang="en" />
-<meta name="DCTERMS.description" content="{{ site.description | escape }}" xml:lang="en" />
+<meta name="title" content="{{ page.title | escape }}, {{ site.title | escape }}" xml:lang="en" />
+{% if site.author or site.organization-name %}<meta name="creator" content="{{ site.author | default: site.organization-name | escape }}" xml:lang="en" />{% endif %}
+{% if site.organization-name %}<meta name="publisher" content="{{ site.organization-name | escape }}" xml:lang="en" />{% endif %}
+<meta name="date" content="{{ site.time | date: '%Y' }}" xml:lang="en" />
+<meta name="description" content="{{ site.description | escape }}" xml:lang="en" />
 
 <!-- Open Graph meta -->
 <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}, {% endif %}{{ site.title | escape }}" />

@@ -11,18 +11,18 @@ Choose mapping options directly from the DCMI Terms namespace: http://purl.org/d
 
 The values will be directly added to meta tag name attribute, thus should use the `DCTERMS` prefix.
 
-For example, to use Dublin Core [Title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title) from the "Terms" namespace, the value would be `DCTERMS.title`.
-To use [abstract](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/abstract), `DCTERMS.abstract`.
+For example, to use Dublin Core [Title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title) from the "Terms" namespace, the value would be `title`.
+To use [abstract](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/abstract), `abstract`.
 If the "dc_map" column is empty, no DC meta tags will be added.
 
 Recommended fields to map include:
 
-- `DCTERMS.title`
-- `DCTERMS.creator`
-- `DCTERMS.created` or `DCTERMS.date`
-- `DCTERMS.description`
-- `DCTERMS.subject`
-- `DCTERMS.type`
+- `title`
+- `creator`
+- `created` or `date`
+- `description`
+- `subject`
+- `type`
 
 This implementation is based on DSpace, following the [DC-HTML](https://www.dublincore.org/specifications/dublin-core/dc-html/2008-08-04/) conventions.
 
